@@ -17,8 +17,7 @@ public class Method_02_Test {
         List<Person> findAll();
 
         default String format() {
-            List<Person> persons = findAll();
-            return "[" + persons.size() + " persons]";
+            return "[" + findAll().size() + " persons]";
         }
     }
     // end::IDao[]
